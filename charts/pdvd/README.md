@@ -59,7 +59,7 @@ This chart deploys all of the required secrets, services, and deployments on a [
     a. Using the internal Postgres database:
 
     ```console
-    DEPLOYHUB_VERSION=10.0.335
+    DEPLOYHUB_VERSION=12.0.1
     helm repo add deployhub https://deployhubproject.github.io/DeployHub-Pro/
     helm repo update
     helm upgrade --install my-release deployhub/deployhub --set dh-ms-general.dbpass=my_db_password --set global.postgresql.enabled=true  --set global.nginxController.enabled=true  --version "${DEPLOYHUB_VERSION}" --namespace deployhub --create-namespace
@@ -70,7 +70,7 @@ This chart deploys all of the required secrets, services, and deployments on a [
     b. Using the external Postgres database:
 
     ```console
-    DEPLOYHUB_VERSION=10.0.335
+    DEPLOYHUB_VERSION=12.0.1
     helm repo add deployhub https://deployhubproject.github.io/DeployHub-Pro/
     helm repo update
     helm upgrade --install my-release deployhub/deployhub --set dh-ms-general.dbpass=my_db_password --set dh-ms-general.dbuser=postgres --set dh-ms-general.dbhost=postgres.hosted.com --set-string dh-ms-general.dbport=5432 --set global.nginxController.enabled=true  --version "${DEPLOYHUB_VERSION}" --namespace deployhub --create-namespace
@@ -97,7 +97,7 @@ This chart deploys all of the required secrets, services, and deployments on a [
     a. Using the internal Postgres database:
 
     ```console
-    DEPLOYHUB_VERSION=10.0.335
+    DEPLOYHUB_VERSION=12.0.1
     helm repo add deployhub https://deployhubproject.github.io/DeployHub-Pro/
     helm repo update
     helm upgrade --install my-release deployhub/deployhub --set dh-ms-general.dbpass=my_db_password --set global.postgresql.enabled=true --set dh-ms-nginx.ingress.nodePort=30000 --version "${DEPLOYHUB_VERSION}" --namespace deployhub --create-namespace
@@ -108,7 +108,7 @@ This chart deploys all of the required secrets, services, and deployments on a [
     b. Using the external Postgres database:
 
     ```console
-    DEPLOYHUB_VERSION=10.0.335
+    DEPLOYHUB_VERSION=12.0.1
     helm repo add deployhub https://deployhubproject.github.io/DeployHub-Pro/
     helm repo update
     helm upgrade --install my-release deployhub/deployhub --set dh-ms-general.dbpass=my_db_password --set dh-ms-general.dbuser=postgres --set dh-ms-general.dbhost=postgres.hosted.com --set-string dh-ms-general.dbport=5432 --set dh-ms-nginx.ingress.nodePort=30000  --version "${DEPLOYHUB_VERSION}" --namespace deployhub --create-namespace
@@ -160,7 +160,7 @@ This chart deploys all of the required secrets, services, and deployments on a [
     a. Using the external Postgres database:
 
     ```console
-    DEPLOYHUB_VERSION=10.0.335
+    DEPLOYHUB_VERSION=12.0.1
     DEPLOYHUB_DNSNAME=deployhub.example.com
     helm repo add deployhub https://deployhubproject.github.io/DeployHub-Pro/
     helm repo update
@@ -188,7 +188,7 @@ This chart deploys all of the required secrets, services, and deployments on a [
 3. Setup Environment Variables
 
    ```console
-   DEPLOYHUB_VERSION=10.0.335
+   DEPLOYHUB_VERSION=12.0.1
    CLUSTER_NAME=deployhub
    ```
 
@@ -232,7 +232,7 @@ This chart deploys all of the required secrets, services, and deployments on a [
     a. Using the external Postgres database:
 
     ```console
-    DEPLOYHUB_VERSION=10.0.335
+    DEPLOYHUB_VERSION=12.0.1
     DEPLOYHUB_DNSNAME=deployhub.example.com
     helm repo add deployhub https://deployhubproject.github.io/DeployHub-Pro/
     helm repo update

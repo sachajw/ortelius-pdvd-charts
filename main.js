@@ -84,7 +84,7 @@ function createYamlOutput () {
     }
     const result = data.replace(/DEPLOYHUB_VERSION=\d+\.\d+\.\d+/g, 'DEPLOYHUB_VERSION=' + chartVersion)
 
-    fs.writeFile('./charts/deployhub/README.md', result, 'utf8', function (err) {
+    fs.writeFile('./charts/pdvd/README.md', result, 'utf8', function (err) {
       if (err) return console.log(err)
     })
   })
