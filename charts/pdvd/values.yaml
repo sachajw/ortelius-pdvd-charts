@@ -1,0 +1,22 @@
+# --------------------------------------------------------------------------
+# 1. pdvd-arangodb Subchart Configuration
+#    These values are intended for the ArangoDB dependency chart.
+# --------------------------------------------------------------------------
+pdvd-arangodb:
+  # The password is marked as REQUIRED in the template logic.
+  # Helm will fail if this value is missing or commented out.
+  arangodb_pass: "YourHighlySecurePassword123" 
+  
+  # Other ArangoDB variables (these still have defaults in your template)
+  arangodb_user: "root"
+  arangodb_host: "localhost"
+  arangodb_port: "8529"
+  arangodb_name: "vulnmgt"
+
+# --------------------------------------------------------------------------
+# 2. pdvd-frontend Subchart Configuration
+#    These values are intended for the Frontend dependency chart.
+# --------------------------------------------------------------------------
+pdvd-frontend:
+  ingress:
+    type: "glb"
