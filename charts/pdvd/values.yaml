@@ -5,7 +5,7 @@
 pdvd-arangodb:
   # The password is marked as REQUIRED in the template logic.
   # Helm will fail if this value is missing or commented out.
-  arangodb_pass: "YourHighlySecurePassword123" 
+  arangodb_pass: "" 
   
   # Other ArangoDB variables (these still have defaults in your template)
   arangodb_user: "root"
@@ -20,3 +20,4 @@ pdvd-arangodb:
 pdvd-frontend:
   ingress:
     type: "glb"
+  graphqlEndpoint: "https://app.ortelius.io/api/v1/graphql"
