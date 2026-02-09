@@ -7,7 +7,8 @@ const chartRepos = [
   'ortelius/pdvd-arangodb',
   'ortelius/pdvd-backend',
   'ortelius/pdvd-frontend',
-  'ortelius/pdvd-osvdev-job'  
+  'ortelius/pdvd-osvdev-job',  
+  'ortelius/pdvd-relscanner-job' 
 ]
 
 // Helper functions
